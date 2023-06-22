@@ -1,0 +1,7 @@
+{
+    "configuration": "mode=off",
+    "board": "arduino:megaavr:nona4809",
+    "programmer": "medbg",
+    "port": "/dev/tty.usbmodem101",
+    "sketch": "Countdown_Timer/countdown/countdown.ino"
+}
