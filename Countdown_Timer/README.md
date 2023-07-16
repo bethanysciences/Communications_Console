@@ -10,7 +10,7 @@ Rack mounted basic countdown timer to set quickly set and manager interval betwe
 - Dial in 1 to 99-minutes using rotary encoder
 - Outputs minutes and seconds to 4-digit 7-segment LED display
 
-## Componants Used
+## Components Used
 
 - [Arduino Nano Every](https://store-usa.arduino.cc/products/arduino-nano-every)
 - [Adafruit I2C Rotary Encoder Breakout](https://www.adafruit.com/product/4991)
@@ -22,16 +22,15 @@ Rack mounted basic countdown timer to set quickly set and manager interval betwe
 ## Compiler
 
 - [Using Arduino 2.1.0 IDE](https://github.com/arduino/arduino-ide)
-- [Arduno platform-specification](https://arduino.github.io/arduino-cli/latest/platform-specification/)
+- [Arduino platform-specification](https://arduino.github.io/arduino-cli/latest/platform-specification/)
 
-## Supported Core(s)
+## Core
 
-- [Arduino megaAVG Boards 1.8.8](https://github.com/arduino/ArduinoCore-megaavr)
+- [Arduino megaAVR Boards 1.8.8](https://github.com/arduino/ArduinoCore-megaavr)
 
-## Libraries used
+## Libraries
 
-- [#include "CountDown.h"](//https://github.com/RobTillaart/CountDown)
+- [CountDown.h](//https://github.com/RobTillaart/CountDown)
 - [Arduino Discussion](//https://playground.arduino.cc/Main/CountDownTimer/)
-- [#include "debounce.h"](//https://github.com/kimballa/button-debounce)
-- [#include "TM1637.h"](//https://github.com/RobTillaart/TM1637)
-
+- [debounce.h](//https://github.com/kimballa/button-debounce)
+- [TM1637.h](//https://github.com/RobTillaart/TM1637)

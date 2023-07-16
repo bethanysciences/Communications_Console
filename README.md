@@ -1,12 +1,12 @@
-# U.S. Coast Guard Communications Center Console
+# Communications Console
 
 by [Bob Smith](https://github.com/bethanysciences/Communications_Console)
 
 Customized standard 19" rack components for U.S. Coast Guard boat station communication room console.
 
-![Panel Image](_images/comms_center_ssk_n.jpeg)
+![Panel Image](_images/comms_center_install_narrow.jpeg)
 
-Custom cut pannels accomodate
+Custom cut panels accommodate
 - Radio section
   - flush mount for Motorola Astro P25 encrypted radio
   - Motorola speaker
@@ -21,9 +21,23 @@ Custom cut pannels accomodate
 
 -----------------------------------------------
 
+## Almanac
+
+![Almanac](_images/tide_clock.svg)
+
+Accurately predicts Sunrises, sets and next High / Low Tides at the Station latitude and longitude WITHOUT requiring an internet connection.
+
+Sunrises and sets use Euclidean geometry to precisely calculate the intersection of sun to the horizons at a specific point in space (Lat/Lon) each day.
+
+The tide clock uses [NOAA published harmonic constituents](https://tidesandcurrents.noaa.gov/about_harmonic_constituents.html), 37 mathematical values representing tidal forces at any moment for specific locations.
+
+[Underlying project and code](https://github.com/bethanysciences/Almanac)
+
+-----------------------------------------------
+
 ## Alarm Activation Switches
 
-[30mm SPDT 12V Stainless Steel Latching Push Button Switch   Angel Eye Red LED](https://www.amazon.com/dp/B09289P6G3/?coliid=I60I49QO0BY87&colid=1A6K5RJO69A4Q&psc=1&ref_=list_c_wl_lv_ov_lig_dp_it) converted to DPDT to accomodate 12v switched indicator light.
+[30mm SPDT 12V Stainless Steel Latching Push Button Switch   Angel Eye Red LED](https://www.amazon.com/dp/B09289P6G3/?coliid=I60I49QO0BY87&colid=1A6K5RJO69A4Q&psc=1&ref_=list_c_wl_lv_ov_lig_dp_it) converted to DPDT to accommodate 12v switched indicator light.
 
 -----------------------------------------------
 
@@ -51,13 +65,19 @@ Plays U.S. Coast Guard unit bugle calls.
 3. Trigger interface for up to 9 tracks
 4. Level inputs: S1 S2 S3 S4 S5 S6 S7 S8 S9 min 0V max 0.3V
 5. MP3 and WAV audio formats w/ sampling rate up to 48KHz
-6. SD Micro card slot supporting 32G maximum FAT32 formated storage
+6. SD Micro card slot supporting 32G maximum FAT32 formatted storage
 7. USB micro data port to access SD Micro card
 8. Trips warning light externally (warning light voltage should be consistent w/ input voltage)
 9. 8 trigger modes
 10. Volume potentiometer
 
-[16mm Stainless Steel Push Button Switchs](https://www.amazon.com/dp/B07QBYDRT4/?coliid=I1X7QEIBETYUN8&colid=1A6K5RJO69A4Q&ref_=list_c_wl_lv_ov_lig_dp_it&th=1)
+[16mm Stainless Steel Push Button Switches](https://www.amazon.com/dp/B07QBYDRT4/?coliid=I1X7QEIBETYUN8&colid=1A6K5RJO69A4Q&ref_=list_c_wl_lv_ov_lig_dp_it&th=1)
+
+### Station Public Address Interconnection
+
+![Signal Paths](_images/SSK_Comms_Console_03_PA_Signal_Path_20230628.png)
+
+![Signal Paths Block](_images/SSK_Comms_Console_03_PA_Signal_Path_Block_20230628.png)
 
 -----------------------------------------------
 
@@ -73,19 +93,19 @@ Rack mounted basic countdown timer to set quickly set and manager interval betwe
 - Dial in 1 to 99-minutes using rotary encoder
 - Outputs minutes and seconds to 4-digit 7-segment LED display
 
-### Componants Used
+### Components Used
 
 - [Arduino Nano Every](https://store-usa.arduino.cc/products/arduino-nano-every)
 - [Adafruit I2C Rotary Encoder Breakout](https://www.adafruit.com/product/4991)
 - [Adafruit Rotary Encoder](https://www.adafruit.com/product/377)
 - [TM1637 based 0.56" high 7-segment LED display](https://www.amazon.com/diymore-Display-Digital-Decimal-Segment/dp/B07MCGDST2/ref=sr_1_6?crid=2KB0SJVDRC588&keywords=tm1637+led+display&qid=1687116410&sprefix=tm1637+led+display%2Caps%2C203&sr=8-6)
 - [Passive Buzzer Module](https://www.amazon.com/RLECS-Passive-Arduino-Raspberry-Speaker/dp/B07XDPXH7K/ref=asc_df_B07XDPXH7K/?tag=hyprod-20&linkCode=df0&hvadid=632016782313&hvpos=&hvnetw=g&hvrand=3559400587378035192&hvpone=&hvptwo=&hvqmt=&hvdev=c&hvdvcmdl=&hvlocint=&hvlocphy=9012147&hvtargid=pla-1944578464961&psc=1)
-- 2 momentary pushbutton switches [16mm Stainless Steel Push Button Switchs](https://www.amazon.com/dp/B07QBYDRT4/?coliid=I1X7QEIBETYUN8&colid=1A6K5RJO69A4Q&ref_=list_c_wl_lv_ov_lig_dp_it&th=1)
+- 2 momentary pushbutton switches [16mm Stainless Steel Push Button Switches](https://www.amazon.com/dp/B07QBYDRT4/?coliid=I1X7QEIBETYUN8&colid=1A6K5RJO69A4Q&ref_=list_c_wl_lv_ov_lig_dp_it&th=1)
 
 ### Compiler
 
 - [Using Arduino 2.1.0 IDE](https://github.com/arduino/arduino-ide)
-- [Arduno platform-specification](https://arduino.github.io/arduino-cli/latest/platform-specification/)
+- [Arduino platform-specification](https://arduino.github.io/arduino-cli/latest/platform-specification/)
 
 ### Supported Core(s)
 
@@ -104,8 +124,8 @@ Rack mounted basic countdown timer to set quickly set and manager interval betwe
 
 Prepared by [Front Panel Express, LLC](frontpanelexpress.com)
 
-### 3 Rack Unit (RU) high panel ![3RU Panel](_images/3ru.png)
+### 3 Rack Unit (RU) high panel ![3RU Panel](_images/rack_cut_plan_3ru.png)
 
-### 6 Rack Unit (RU) high panel ![6RU Panel](_images/6RU.png)
+### 6 Rack Unit (RU) high panel ![6RU Panel](_images/rack_cut_plan_6ru.png)
 
-### ![Panel Cuts](_images/Communications_Console_cuts.jpg)
+### ![Panel Cuts](_images/comms_console_cuts.jpg)
